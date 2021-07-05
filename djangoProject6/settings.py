@@ -17,7 +17,7 @@ from django.urls import path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-local_env = path(os.path.join(BASE_DIR, '.env'))
+local_env = open(os.path.join(BASE_DIR, '.env'))
 
 env_list = dict()
 
